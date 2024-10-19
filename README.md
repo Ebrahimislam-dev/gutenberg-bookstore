@@ -49,9 +49,10 @@ npm install
 ```bash
 npm run dev
 ```
+4. Open your browser and visit `http://localhost:3000`.
+
 ## Live Link
 [View the project live here](https://gutenberg-bookstore.vercel.app/)
-4. Open your browser and visit `http://localhost:3000`.
 
 ---
 
