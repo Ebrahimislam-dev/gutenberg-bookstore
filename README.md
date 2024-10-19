@@ -1,4 +1,3 @@
-
 # Gutenberg Bookstore
 
 ## Project Overview
@@ -50,7 +49,8 @@ npm install
 ```bash
 npm run dev
 ```
-
+## Live Link
+[View the project live here](https://gutenberg-bookstore.vercel.app/)
 4. Open your browser and visit `http://localhost:3000`.
 
 ---
@@ -74,6 +74,7 @@ Books are paginated, and users can navigate through pages using the "Next" and "
 The wishlist page displays all books that the user has added to their wishlist. Wishlist items are stored in the browser's `localStorage`, so the list persists even after the user refreshes the page or returns at a later time.
 
 #### Wishlist Features:
+
 - Users can view books they've added to their wishlist.
 - **Remove from Wishlist**: Clicking the heart icon on a wishlist item will remove it from the list in real-time.
 - **Loader**: A loading spinner is shown while wishlist items are being fetched.
@@ -81,6 +82,7 @@ The wishlist page displays all books that the user has added to their wishlist. 
 ### 3. Book Details
 
 Each book on the home page can be clicked, which navigates the user to a dedicated details page. On this page, the user can:
+
 - View the book's full title, authors, and other details.
 - See if the book is in their wishlist (indicated by the heart icon).
 - Add or remove the book from their wishlist directly from the details page.
@@ -103,11 +105,13 @@ Each book on the home page can be clicked, which navigates the user to a dedicat
 ├── src
 │   ├── components
 │   │   ├── Navbar        # Navbar component shared across pages
-│   ├── pages
-│   │   ├── index.tsx     # Home page with search, filter, and wishlist functionality
-│   │   ├── wishlist.tsx  # Wishlist page showing saved books
+│   ├── app
+│   │   ├── page.tsx     # Home page with search, filter, and wishlist functionality
+│   │   ├── wishlist.tsx
+            └── page.tsx   # Wishlist page showing saved books
 │   │   ├── books
-│   │   │   └── [id].tsx  # Book details page for each book
+│   │   │   └── [id]
+                └── page.tsx  # Book details page for each book
 └── README.md
 ```
 
@@ -127,4 +131,4 @@ Each book on the home page can be clicked, which navigates the user to a dedicat
 
 Feel free to contribute to this project by submitting issues or pull requests!
 
---- 
+---
